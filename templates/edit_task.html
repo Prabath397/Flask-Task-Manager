@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>✏️ Edit Task</h2>
+
+<form method="post">
+    <input type="text" name="title" value="{{ task.title }}" required>
+    <button type="submit">Save Changes</button>
+</form>
+
+<p><a href="{{ url_for('tasks') }}">⬅ Back to Tasks</a></p>
+{% endblock %}

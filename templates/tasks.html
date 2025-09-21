@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>✅ Your Tasks</h2>
+
+<form method="post">
+    <input type="text" name="title" placeholder="New Task" required>
+    <button type="submit">Add Task</button>
+</form>
+
+<ul>
+{% for task in tasks %}
+    <li>
+        {% if task.completed %}
+            <strike>{{ task.title }}</strike>
+        {% else %}
+            {{ task.title }}
+            <a href="{{ url_for('complete_task', task_id=task.id) }}">✔ Complete</a>
+            <a href="{{ url_for('edit_task', task_id=task.id) }}">✏️ Edit</a>
+        {% endif %}
+        <a href="{{ url_for('delete_task', task_id=task.id) }}" style="color:red;">❌ Delete</a>
+    </li>
+{% else %}
+    <li>No tasks yet.</li>
+{% endfor %}
+</ul>
+{% endblock %}

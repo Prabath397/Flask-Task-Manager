@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>📊 Dashboard</h2>
+
+<p>Total Tasks: {{ total_tasks }}</p>
+<p>Completed Tasks: {{ completed_tasks }}</p>
+<p>Pending Tasks: {{ pending_tasks }}</p>
+
+<canvas id="tasksChart" width="400" height="200"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('tasksChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Completed', 'Pending'],
+            datasets: [{
+                data: [{{ completed_tasks }}, {{ pending_tasks }}],
+                backgroundColor: ['#4CAF50', '#FF9800']
+            }]
+        }
+    });
+</script>
+{% endblock %}
