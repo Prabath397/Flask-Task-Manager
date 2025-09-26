@@ -1,30 +1,10 @@
-\# 📝 Task Manager App
+# 📝 Task Manager App
 
 
 
-A simple \*\*Task Manager\*\* built with \*\*Flask + SQLite\*\*, allowing users to sign up, log in, and manage their tasks.  
+A simple **Task Manager** built with **Flask + SQLite**, allowing users to sign up, log in, and manage their tasks.  
 
-Includes a \*\*dashboard with stats and charts\*\* powered by Chart.js.
-
-
-
----
-
-
-
-\## 🚀 Features
-
-\- ✅ User authentication (signup, login, logout) with hashed passwords  
-
-\- ✅ Add new tasks  
-
-\- ✅ Mark tasks as complete  
-
-\- ✅ Edit existing tasks  
-
-\- ✅ Delete tasks  
-
-\- ✅ Dashboard with stats (total, completed, pending) + chart  
+Includes a **dashboard with stats and charts** powered by Chart.js.
 
 
 
@@ -32,10 +12,30 @@ Includes a \*\*dashboard with stats and charts\*\* powered by Chart.js.
 
 
 
-\## 📂 Project Structure
+## 🚀 Features
+
+- ✅ User authentication (signup, login, logout) with hashed passwords  
+
+- ✅ Add new tasks  
+
+- ✅ Mark tasks as complete  
+
+- ✅ Edit existing tasks  
+
+- ✅ Delete tasks  
+
+- ✅ Dashboard with stats (total, completed, pending) + chart  
 
 
 
+---
+
+
+
+## 📂 Project Structure
+
+
+```
 flask-task-manager/
 
 │── app.py
@@ -55,38 +55,37 @@ flask-task-manager/
 │ └── dashboard.html
 
 │── README.md
+```
 
 ---
 
 
 
-\## 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 
 
-Python (Flask)
+* Python (Flask)
 
 
 
-SQLite (Database)
+* SQLite (Database)
 
 
 
-Flask-Login (User auth)
+* Flask-Login (User auth)
 
 
 
-Chart.js (Dashboard charts)
-
+* Chart.js (Dashboard charts)
 
 
 ----
 
 
-
-\##👤 Author
-
+## 👤 Author
 
 
-Prabath
+
+Prabath Jayasuriya
 
